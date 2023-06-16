@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Rajdhani&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>eMart</title>
+</head>
+
+<body>
+    <header>
+        <section id="Navigation">
+            <div class="container-fluid">
+                <div class="hamburger-navigation">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <div class="row headerWidthNone">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                        <div class="headerLogo">
+                            <a href="#"><img src="images/interior-logo.webp" class="logo" alt="website-logo" /></a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                        <nav class="basketCartRegister">
+                            <ul class="navigation">
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Home</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Shop</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">About</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Blog</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area  navigationPages"
+                                        href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li class="submenuItem "><a class="submenuItem-area" href="error.html">Error
+                                                Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Contact</a></li>
+                                <li class="navigation-item"><i
+                                        class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i>
+                                </li>
+                                <li class="basketCartRegister-header"><a href="wishlist.html"><i
+                                            class="fa-regular fa-heart"></i></a></li>
+                                <li class="basketCartRegister-header"><a href="basket.html" class="cartCount"><span
+                                            class="cartCountItem"></span><i class="fa-solid fa-cart-shopping"></i></a>
+                                </li>
+                                <li class="basketCartRegister-header"><a href="user.html"><i
+                                            class="fa-regular fa-user"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main-content">
+
+        <div class="contact-header mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <h1>Contact Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">All</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+
+        <div class="contact-form-area section-space-y-axis-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-wrap">
+                            <div class="contact-info text-white" data-bg-image="/assets/images/contactpagebg.jpg">
+                                <h2 class="contact-title">Contact Info:</h2>
+                                <p class="contact-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde pariatur autem
+                                    reiciendis.
+                                </p>
+                                <ul class="contact-list">
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>                 
+                                        <a href="#">+994550000000</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-at"></i>
+                                        <a href="#">info@example.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>Azerbaijan , Baku</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form id="contact-form" class="contact-form">
+                                <div class="group-input">
+                                    <div class="form-field me-lg-30 mb-35 mb-lg-0">
+                                        <input type="text" name="con_firstName" placeholder="First Name*"
+                                            class="input-field" />
+                                    </div>
+                                    <div class="form-field mb-35">
+                                        <input type="text" name="con_lastName" placeholder="Last Name*"
+                                            class="input-field" />
+                                    </div>
+                                </div>
+                                <div class="group-input mb-35">
+                                    <div class="form-field me-lg-30 mb-35 mb-lg-0">
+                                        <input type="text" name="con_phone" placeholder="Phone*" class="input-field" />
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="con_email" placeholder="Email*" class="input-field" />
+                                    </div>
+                                </div>
+                                <div class="form-field mb-5">
+                                    <textarea name="con_message" placeholder="Message"
+                                        class="textarea-field"></textarea>
+                                </div>
+                                <div class="contact-button-wrap">
+                                    <button type="submit" class="btn btn btn-custom-size xl-size btn-pronia-primary">
+                                        Post Comment
+                                    </button>
+                                </div>
+                                <p class="form-message mt-3 mb-0"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-with-map mt-5">
+            <div class="contact-map">
+                <iframe class="contact-map-size"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12157.71469426235!2d49.8539455!3d40.3771909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1str!2saz!4v1686948573485!5m2!1str!2saz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section id="footerlink" class="footerColor">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerContent">
+                            <div class="footerPagesName mt-5">
+                                <h4>Quick Link</h4>
+                            </div>
+                            <div class="footerPages mt-4">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="#">Responsibility</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">Image Bank</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerContent">
+                            <div class="footerPagesName mt-5">
+                                <h4>Customer Service</h4>
+                            </div>
+                            <div class="footerPages mt-4">
+                                <ul>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Checkout Page</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Deliveries & Refunds</a></li>
+                                    <li><a href="#">Cart Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerContent">
+                            <div class="footerPagesName mt-5">
+                                <h4>More</h4>
+                            </div>
+                            <div class="footerPages mt-4">
+                                <ul>
+                                    <li><a href="#">Gift Cardt</a></li>
+                                    <li><a href="#">Lookbook<a></li>
+                                    <li><a href="#">Rewards Program</a></li>
+                                    <li><a href="#">Wedding Dress</a></li>
+                                    <li><a href="#">Host a Party</a></li>
+                                    <li><a href="#">Extended Sizing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerContent mt-5">
+                            <div class="signup-footer">
+                                <h4>Don't Miss Any Update</h4>
+                                <p>You can join us</p>
+                                <form action="" class="search">
+                                    <span class="searchItem">
+                                        <input type="mail" placeholder="Your Email Address" class="searchText"
+                                            required />
+                                        <input type="submit" class="searchBtn">
+                                    </span>
+                                </form>
+                                <span class="payment-footer"><a href="#"><img src="/assets/images/payment.png"
+                                            alt=""></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/ea59f2a167.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
