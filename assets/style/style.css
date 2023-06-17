@@ -193,8 +193,8 @@
  .btn-header-shop {
    display: inline-block;
    padding: 20px 45px;
-   background-color: white;
-   color: black;
+   background-color: black;
+   color: white;
    border-radius: 5px;
    font-family: var(--main-font);
    font-size: 16px;
@@ -205,8 +205,8 @@
    cursor: pointer;
    transform: translateY(-1em);
    transition: 0.4s;
-   background-color: black;
-   color: white !important;
+   background-color: white;
+   color: black !important;
  }
  .header-hero-slider-img {
    width: 100%;
@@ -457,7 +457,7 @@
 }
 
 .error-404-content {
-  background-image: url(/assets/images/pexels-photo-6707628.jpeg);
+  background-image: url(/assets/images/header-background.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -490,7 +490,7 @@
 
  /*Contact Page Start*/
 .contact-header{
-  background-image: url(/assets/images/190217.jpg);
+  background-image: url(/assets/images/bgforheader.jpg);
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
@@ -577,7 +577,9 @@ color: white !important;
 .contact-list li:not(:last-child) {
   margin-bottom: 60px;
 }
-
+.contact-list li{
+  color: black;
+}
 .contact-list li i {
   background-color: black;
   color: white;
@@ -593,7 +595,7 @@ color: white !important;
 
 .contact-list li a {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact-form {
@@ -645,14 +647,6 @@ color: white !important;
   font-size: 20px;
 }
 
-.contact-form .form-messege.success {
-  color: #525252;
-}
-
-.contact-form .form-messege.error {
-  color: red;
-}
-
 .contact-button-wrap {
   display: inline-block;
   padding: 20px 45px;
@@ -676,3 +670,178 @@ color: white !important;
 }
 
  /*Contact Page End*/
+
+
+ /*FAQ Page Start*/
+ .frequently-area h2.heading {
+  padding-bottom: 60px;
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.frequently-area .frequently-item > ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub, .frequently-area .frequently-item > ul > li.children {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub > a, .frequently-area .frequently-item > ul > li.children > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555252;
+}
+.frequently-area .frequently-item > ul > li.has-sub > a:hover, .frequently-area .frequently-item > ul > li.children > a:hover {
+  color: black;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub > a i, .frequently-area .frequently-item > ul > li.children > a i {
+  font-size: 25px;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub > ul.frequently-body, .frequently-area .frequently-item > ul > li.children > ul.frequently-body {
+  display: none;
+  padding-top: 20px;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub > ul.frequently-body > li, .frequently-area .frequently-item > ul > li.children > ul.frequently-body > li {
+  line-height: 1.8;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub.open > a, .frequently-area .frequently-item > ul > li.children.open > a {
+  color:#F0ECE4 ;
+}
+
+.frequently-area .frequently-item > ul > li.has-sub.open > a > i:before, .frequently-area .frequently-item > ul > li.children.open > a > i:before {
+  content: '\e682'; 
+ }
+/*FAQ Page End*/
+
+/*User Page Start*/
+.breadcrumb-header{
+  background-image: url(/assets/images/bgforheader.jpg);
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.login-form {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.login-form input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  line-height: 23px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.login-form input[type='checkbox'] {
+  width: auto;
+}
+
+.login-title {
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.login-form .check-box {
+  float: left;
+  margin-right: 70px;
+}
+
+.login-form .check-box:last-child {
+  margin-right: 0;
+}
+
+.login-form .check-box input[type='checkbox'] {
+  display: none;
+}
+
+.login-form .check-box input[type='checkbox'] + label {
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.login-form .check-box input[type='checkbox'] + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #dee2e6;
+  content: '';
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.login-form .check-box input[type='checkbox'] + label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  content: '\f00c';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0;
+  width: 20px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.login-form .check-box input[type='checkbox']:checked + label:before {
+  border: 2px solid #dee2e6;
+}
+
+.login-form .check-box input[type='checkbox']:checked + label:after {
+  opacity: 1;
+}
+
+.forgotton-password_info a {
+  font-size: 14px;
+}
+/*User Page End*/
