@@ -24,9 +24,22 @@ a {
 }
 
 /*Header-Navigation-Start*/
-/*Header-Top-Start*/
+/*Up-Navigation-Start*/
+.Up-Navigation{
+  background-color: #F0ECE4 ;
+}
+.up-header-text{
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+}
+.navigation-socialmediadresses{
+  color: black;
+  font-size: 20px;
+  margin-right: 25px;
+}
 
-/*Header-Top-End*/
+/*Up-Navigation-End*/
 #Navigation {
   background-color: white;
 }
@@ -312,9 +325,11 @@ a {
     font-weight: 600;
     letter-spacing: 1.5px;
 }
-
+.up-elementor{
+background-color: #E3ECF3;
+}
 .elementorContent:hover{
-  background-color: #000;
+  background-color: #131212;
   opacity: .5;
 }
 .up-elementorContent-text{
@@ -325,16 +340,23 @@ a {
   visibility: visible;
   transition: 1s linear;
 }
+
 .up-elementor-btn-home:hover {
   cursor: pointer;
   transform: translateY(-.5em);
   transition: 0.4s linear;
-  background-color: transparent;
+  background-color: transparent ;
   border: 1px solid white;
   color: white !important;
 } 
-
-
+.upelementorContentheader{
+ color: white;
+ font-family: var(--main-font);
+ font-weight: 700;
+}
+.elementorContent-first{
+ background-color: ;
+}
 .elementorContent{
   width: 100%;
   padding-top: 270px;
@@ -558,7 +580,7 @@ a {
 
 .home-produtc-title {
   font-family: 'Poppins';
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   text-transform: none;
   font-size: 1.3rem;
   line-height: 1.9rem !important;
@@ -577,8 +599,8 @@ a {
 }
 
 .home-product-newPrice {
-  font-weight: 900;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .home-product-icon {
