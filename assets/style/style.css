@@ -1422,6 +1422,26 @@ background-color: #FBF4F0;
 /*Blog Page End*/
 
 /*Single Page Start*/
+
+.btn-header-singleblog {
+  display: inline-block;
+  padding: 20px 45px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.btn-header-singleblog:hover {
+  cursor: pointer;
+  transform: translateY(-1em);
+  transition: 0.4s;
+  background-color: black;
+  color: white !important;
+}
 .creator-image{
   border-radius: 50%;
 }
@@ -1449,6 +1469,29 @@ background-color: #FBF4F0;
   bottom: 0;
   background-color:#272727;
   opacity: 0.2;
+}
+.singleblog-excellent-process img{
+ height: auto;
+ max-width: 100%;
+}
+.singleblog-reply{
+  color: red;
+}
+.singleblog-price{
+  color: #000;
+}
+.singleblog-header-first {
+  font-weight: 600;
+  font-family: var(--body-font);
+}
+.singleblog-text{
+  font-family: var(--body-font);
+  color: #7c7c7c;
+}
+.singleblog-processes-text{
+color: red;
+font-weight: 400;
+font-family: var(--body-font);
 }
 /*Single Page End*/
 
