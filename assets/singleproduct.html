@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Rajdhani&display=swap"
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+
   <header>
     <section id="Up-Navigation" class="Up-Navigation">
       <div class="up-header d-none d-lg-block">
@@ -71,8 +73,8 @@
                   </ul>
                 </li>
                 <li class="navigation-item"><a class="navigation-item-area" href="contact.html">Contact</a></li>
-                <li class="navigation-item"><i
-                    class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i>
+                <li class="navigation-item ">
+                  <i class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i>
                 </li>
                 <li class="basketCartRegister-header"><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
                 </li>
@@ -86,73 +88,104 @@
       </div>
     </section>
   </header>
-  <main>
-    <section id="blog-main">
-      <div class="container blog">
-        <div class="row gy-4 gx-4 p-4">
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
 
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-1.jpg" alt="" class="blog-page-image"></a>
-            
-            <p class="blog-page-personId">By Jessica Bryant</p>
-            <h5 class="blog-page-header">Top 5 Tips For Home Texture</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
+  <body>
+    <section id="ProductAndSidebar">
+      <div class="container mt-5 mb-5 pt-5 pb-5">
+        <div class="row gy-5 m-auto">
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pe-lg-5">
+            <div class="row gy-4 flex-wrap-reverse">
+              <div class='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12' id='thumb_container'>
+                <div class="row gy-4">
+                  <div class='col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-4 col-4' id='thumb_container'>
+                    <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                      src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
+                      srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
+                      height="auto" width="800" onClick='sendimg(this);'>
+                  </div>
+                </div>
+              </div>
+              <div class='col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12'>
+                <div id="main_image">
+                  <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                    src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
+                    srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
+                    height="auto" width="800">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-2.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Sergio Bicego</p>
-            <h5 class="blog-page-header">Since 1988, Saba have been creating furniture</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
+          <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ps-5">
+            <div class="shopDetailsProductTitle">
+              <h4>Green Armchair</h4>
+            </div>
+            <div class="shopDetailsProductReting d-flex align-items-center flex-wrap">
+              <ul class="d-flex mt-3">
+                <li class="shopDetailsProductRetingItem"><i class="fa-solid fa-star"></i></li>
+                <li class="shopDetailsProductRetingItem"><i class="fa-solid fa-star"></i></li>
+                <li class="shopDetailsProductRetingItem"><i class="fa-solid fa-star"></i></li>
+                <li class="shopDetailsProductRetingItem"><i class="fa-solid fa-star"></i></li>
+                <li class="shopDetailsProductRetingItem"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <span class="shopDetailsProductReview mt-3 ms-3">(1 Review)</span>
+            </div>
+            <div class="shopDetailsProductPrice mt-4">
+              <del>$450.00</del>
+              <span class="singleproductPrice">$380.00</span><span class="singleproduct-discount ms-3">-16%</span>
+            </div>
+            <div class="shopDetailsProduct shopDetailsProductDesc">
+              <i class="fa-solid fa-circle-check mt-1"></i>
+              <p class="shopDetailsProductDescItem ms-1"> Hurry up!! only <span class="singleproductleftitem">12</span>
+                items left</p>
+            </div>
+            <div class="product-count">
+            </div>
+            <span class="quantity" for="size">Quantity</span>
+            <form action="#">
+              <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="quantity input-group">
+                    <div class="minus"::before>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-minus">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </div>
+                    <div class="quantity-decrase input-group-addon d-flex">
+                      <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="qty"
+                        class="input-text qty text t form-control" inputmode="numeric">
+                    </div>
+                    <div class="quantity-increase input-group-addon d-flex"></div>
+                    <div class="plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-plus">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                  <button id="sbw_wc-adding-button" type="submit" name="emart-wc-buy-now" value="83" class="buy_now_button button alt" >Buy Now</button>
+              </div>
+              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <input type="submit" value="add to cart" class="add-to-cart">
+            </div>
+            </div>
+            </form>
           </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-3.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Alain Gilles</p>
-            <h5 class="blog-page-header">The Best Home Accessories and Sofa</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-4.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Giuseppe Vigano</p>
-            <h5 class="blog-page-header">Breakfast Sofa Bed is made by Saba Italia</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/bgforheader.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Anton Cristell </p>
-            <h5 class="blog-page-header"> Designed and made in Italy.</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-5.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Emanuel Gargano</p>
-            <h5 class="blog-page-header">The Cannole garden sofa</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-6.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Tomu Katayanag</p>
-            <h5 class="blog-page-header">The Vibieffe Sit Up sofa</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-7.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Saba Gala</p>
-            <h5 class="blog-page-header">Inhabited the '70s</h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 blog-page-item">
-            <a href="/assets/singleblogpage.html" class="blog-page-item-single"><img src="/assets/images/blog-image-8.jpg" alt="" class="blog-page-image"></a>
-            <p class="blog-page-personId">By Sebastian Herkner </p>
-            <h5 class="blog-page-header">The Twins Teak </h5>
-            <p class="blog-page-datetime"><i class="fa-solid fa-calendar-days"></i><span>October 19, 2022</span></p>
-          </div>
+
         </div>
-      </div>  
+      </div>
+      </div>
+      </div>
     </section>
-  </main>
+  </body>
 
   <footer>
-    <section id="footerlink" class="footerColor">
+    <section id="footerlink" class="footerColor mt-3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -222,20 +255,23 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div
-            class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 footerCopyright-line mt-5 d-flex justify-content-center align-items-center ">
-            <div class="footer-solid">
-              <p class="footerCopyright mt-3">Copyright © 2023 . Coded By <b><a class="footerCopyrightText"
-                    href="https://github.com/nicathuseynli"> Nicat Huseynli </a></b>
-              </p>
-            </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 footerCopyright-line mt-5 d-flex justify-content-center align-items-center ">
+          <div class="footer-solid">
+            <p class="footerCopyright mt-3">Copyright © 2023 . Coded By <b><a class="footerCopyrightText"
+                  href="https://github.com/nicathuseynli"> Nicat Huseynli </a></b>
+            </p>
           </div>
         </div>
       </div>
+
     </section>
   </footer>
 
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
   <script src="https://kit.fontawesome.com/ea59f2a167.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

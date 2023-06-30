@@ -19,7 +19,7 @@ upperSlider.oninput = function () {
   }
   document.querySelector("#two").value = this.value;
 };
-
+ 
 lowerSlider.oninput = function () {
   lowerVal = parseInt(lowerSlider.value);
   upperVal = parseInt(upperSlider.value);
@@ -45,3 +45,14 @@ closesidebar.addEventListener("click", (e) => {
   sidebar.classList.remove("visible");
 });
 // sidebar end
+
+// Single Page Photo start
+function sendimg(a) {
+  document.getElementById("mainimg").src = a.src;
+}
+
+// Single Page end
+
+//product list Start
+
+//product list End
