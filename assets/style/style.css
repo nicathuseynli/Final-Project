@@ -1037,35 +1037,42 @@ input[type="checkbox"]{
 
 .error-404-content {
   background-image: url(/assets/images/header-background.jpeg);
-  background-position: center center;
+  width: 100%;
+  background-position:center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
   width: 100%;
   padding-top: 400px;
   padding-bottom: 400px;
 }
-
-.btn-error {
+.btn-error{
+  display: inline-block;
+  padding: 20px 45px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.title{
+  padding-bottom: 30px;
+  font-family: var(--main-font);
+  font-weight: 800;
+  font-size: 50px;
+}
+.btn-error:hover {
+  cursor: pointer;
+  transform: translateY(-1em);
+  transition: 0.4s;
   background-color: black;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 0;
-  width: 208px;
-  height: 63px;
-  line-height: 63px;
+  color: white !important;
 }
 
 .btn-error i {
   margin-left: 10px;
   font-size: 20px;
-}
-
-.btn-error:hover {
-  background-color: #525252;
-  color: #ffffff;
 }
 
 /*Single Product Start*/
@@ -1481,6 +1488,32 @@ span {
 /*Contact Page End*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /*FAQ Page Start*/
+.accordion-item .accordion-header{
+ font-family: var(--main-font);
+ font-weight:700;
+}
+.accordion-item p{
+  font-family: var(--main-font);
+}
+.faqbanerBtn{
+  display: inline-block;
+  padding: 20px 45px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.faqbanerBtn:hover {
+  cursor: pointer;
+  transform: translateY(-1em);
+  transition: 0.4s;
+  background-color: black;
+  color: white !important;
+}
+
 .frequently-area h2.heading {
   padding-bottom: 60px;
   margin-top: 60px;
@@ -1549,120 +1582,142 @@ span {
 
 /*FAQ Page End*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
-/*User Page Start*/
+/*Login Page Start*/
 .breadcrumb-header {
-  background-image: url(/assets/images/bgforheader.jpg);
+  background-color:#F1FBFF ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 500px;
 }
-
-.login-form {
-  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  padding: 30px;
-}
-
-.login-form label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 12px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.login-form input {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #dee2e6;
-  border-radius: 0;
-  line-height: 23px;
-  padding: 10px 20px;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-.login-form input[type='checkbox'] {
-  width: auto;
-}
-
-.login-title {
-  font-size: 20px;
-  line-height: 23px;
-  text-transform: capitalize;
+.breadcrumb-header h1{
+  font-family: var(--body-font);
+  font-size: 55px;
   font-weight: 700;
-  margin-bottom: 0;
-  padding-bottom: 20px;
-}
 
-.login-form .check-box {
-  float: left;
-  margin-right: 70px;
 }
-
-.login-form .check-box:last-child {
-  margin-right: 0;
+.login {
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2.7px rgba(0, 0, 0, 0.017),
+    0px 0px 6.9px rgba(0, 0, 0, 0.027), 0px 0px 14.2px rgba(0, 0, 0, 0.035),
+    0px 0px 29.2px rgba(0, 0, 0, 0.041), 0px 0px 80px rgba(0, 0, 0, 0.05);
 }
-
-.login-form .check-box input[type='checkbox'] {
-  display: none;
-}
-
-.login-form .check-box input[type='checkbox']+label {
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.login-form .check-box input[type='checkbox']+label:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  display: block;
-  border: 2px solid #dee2e6;
-  content: '';
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.login-form .check-box input[type='checkbox']+label:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  content: '\f00c';
+.loginTitle {
+  font-size: 22px;
+  font-family: var(--body-font);
   font-weight: 600;
+}
+.loginDesc {
+  font-size: 13px;
+  font-family: var(--body-font);
+  font-weight: 500;
+  color: #7c7c7c;
+}
+/* 
+.accountTitle input {
+  padding: 15px;
+  border-radius: 15px;
+  border:1px solid;
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 500;
+} */
+.accountTitle label {
   font-size: 12px;
-  line-height: 20px;
-  opacity: 0;
-  width: 20px;
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  font-family: var(--body-font);
+  font-weight: 400;
 }
+.accountTitle input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid hsl(var(--black) / 0.09);
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 500;
+  outline: none;
+} 
+.accountTitleItem {
+  position: relative;
+}
+.accountTitleItem .eyes {
+  position: absolute;
+  right: 22px;
+  top: 19px;
+}
+.eyes {
+  color: #7c7c7c;
+  cursor: pointer;
+}
+.remember label {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--body-font);
+  margin-left: 8px;
+}
+.forgotPassword .forgotPasswordArea,
+.forgotPasswordArea:hover {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--body-font);
+  color: #20679e;
+  cursor: pointer;
+}
+.loginBtn {
+  width: 100%;
+  padding: 15px;
+  background-color: #776e5b;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+.loginBtn:hover {
+  background-color: #141311;;
+  color: white;
+  border: 1px solid#141311;
+}
+.SignUp span {
+  font-family: var(--body-font);
+  font-weight: 300;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+.accountTitle{
+  border-color: black;
+}
+.SignUp .loginRegister {
+  color: black;
+  font-size: 16px;
+  font-weight: var(--body-font);
+  font-weight: 600;
+}
+@media screen and (min-width: 280px) and (max-width: 429.5px) {
+  .SignUp span,
+  .loginRegister {
+    font-size: 13.4px !important;
+  }
+  .remember label {
+    font-size: 13px !important;
+  }
+  .forgotPasswordArea {
+    font-size: 13px !important;
+  }
+  .loginTitle {
+    font-size: 18px;
+  }
+}
+/*Login Page End*/
 
-.login-form .check-box input[type='checkbox']:checked+label:before {
-  border: 2px solid #dee2e6;
-}
+/*Register Page Start*/
 
-.login-form .check-box input[type='checkbox']:checked+label:after {
-  opacity: 1;
-}
-
-.forgotton-password_info a {
-  font-size: 14px;
-}
-/*User Page End*/
+/*Register Page End*/
 
 /*Blog Page Start*/
 
