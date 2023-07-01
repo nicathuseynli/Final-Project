@@ -52,7 +52,3 @@ function sendimg(a) {
 }
 
 // Single Page end
-
-//product list Start
-
-//product list End

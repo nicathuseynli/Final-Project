@@ -80,7 +80,8 @@
                 </li>
                 <li class="basketCartRegister-header"><a href="basket.html" class="cartCount"><span
                       class="cartCountItem"></span><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="basketCartRegister-header"><a href="register.html"><i class="fa-regular fa-user"></i></a></li>
+                <li class="basketCartRegister-header"><a href="register.html"><i class="fa-regular fa-user"></i></a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -92,6 +93,10 @@
   <body>
     <section id="ProductAndSidebar">
       <div class="container mt-5 mb-5 pt-5 pb-5">
+        <div class="sideBarHeader">
+          <span class="singlePageBarHeader"><a id="sideBarHeaderClick" name="Path" href="index.html">Home</a><span class="category"> /
+              Furniture /</span><span class="categprodname"> Green ArmChair</span></span>
+        </div>
         <div class="row gy-5 m-auto">
           <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pe-lg-5">
             <div class="row gy-4 flex-wrap-reverse">
@@ -103,11 +108,17 @@
                       srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
                       height="auto" width="800" onClick='sendimg(this);'>
                   </div>
+                  <div class='col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-4 col-4' id='thumb_container'>
+                    <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                      src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
+                      srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
+                      height="auto" width="800" onClick='sendimg(this);'>
+                  </div>
                 </div>
               </div>
               <div class='col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12'>
-                <div id="main_image">
-                  <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                <div id="main_image" class="xzoom-thumbs product-image-preview active">
+                  <img decoding="async" loading="lazy" alt="custom-image" class="primary-img xzoom" id="xzoom-fancy"
                     src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
                     srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
                     height="auto" width="800">
@@ -143,43 +154,201 @@
             <span class="quantity" for="size">Quantity</span>
             <form action="#">
               <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-2">
                   <div class="quantity input-group">
-                    <div class="minus"::before>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-minus">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                      </svg>
-                    </div>
                     <div class="quantity-decrase input-group-addon d-flex">
                       <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="qty"
                         class="input-text qty text t form-control" inputmode="numeric">
                     </div>
-                    <div class="quantity-increase input-group-addon d-flex"></div>
-                    <div class="plus">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-plus">
-                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                      </svg>
-                    </div>
                   </div>
                 </div>
-                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                  <button id="sbw_wc-adding-button" type="submit" name="emart-wc-buy-now" value="83" class="buy_now_button button alt" >Buy Now</button>
+                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 mb-2">
+                  <input type="submit" value="Add to Card" class="singleprod-button-add-to-cart">
               </div>
-              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <input type="submit" value="add to cart" class="add-to-cart">
-            </div>
-            </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-2">
+                  <input type="submit" value="Buy Now" class="singleprod-button-buy">
+              </div>
+              </div>
             </form>
+            <div class="prod-info d-flex flex-column order">
+              <div class="delivery-time mt-3 me-5">
+                <i class="fa-solid fa-truck-fast"></i><span class="estimated-delivery">Estimated Delivery:</span><span class="delivery-time">Within 5-7 days</span> 
+              </div>
+              <div class="free-shipping mt-1 me-4">
+                <i class="fa-solid fa-cart-shopping"></i><span class="free-shipping">Free shipping:</span><span class="order-price">On orders over $1499 and above</span>
+              </div>
+           </div>
+           <div class="product-datas d-flex justify-content-between align-items-center">
+            <span class="sku_wrapper mt-3">
+              SKU : <span class="sku"> SGA90056</span>
+            </span>
+            <span class="categories_wrapper mt-3">
+              Categories : <span class="categories">
+                <a class="category_type" href="#">Deal,</a>
+                 <a class="category_type" href="#">Furniture</a></span>
+            </span>
+           </div>
+           <div class="payment-product mt-5">
+            <p>Online Payment</p> 
+            <img src="/assets/images/product-online-Payment.png" alt="">
+           </div>
           </div>
-
         </div>
       </div>
-      </div>
+    </section>
+
+    <section id="product-all-informations">
+      
+    </section>
+
+
+    <section id="Realeted Products">
+      <div class="container">
+        <div class="row">
+          <h4 class="realeted mb-3">Realeted Products</h4>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="home-product">
+              <div class="home-product-content">
+                <div class="home-product-item">
+                  <div class="home-product-img">
+                    <span class="home-product-discount">-16%</span>
+                    <div class="home-product-icon">
+                      <div class="home-product-icon-item">
+                        <a href="#"></a>
+                      </div>
+                      <a href="" class="home-product-icon-two"></a>
+                      <a href="" class="home-product-icon-three">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                        src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
+                        srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
+                        height="auto" width="800">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-product-desc">
+                <div class="home-product-desc-item">
+                  <h5 class="home-produtc-title">
+                    <a href="#">Green Armchair</a>
+                  </h5>
+                  <h6 class="home-product-price">
+                    <del class="home-product-oldPrice">$200</del>
+                    <span class="home-product-newPrice">$450</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="home-product">
+              <div class="home-product-content">
+                <div class="home-product-item">
+                  <div class="home-product-img">
+                    <span class="home-product-discount">-14%</span>
+                    <div class="home-product-icon">
+                      <div class="home-product-icon-item">
+                        <a href="#"></a>
+                      </div>
+                      <a href="" class="home-product-icon-two"></a>
+                      <a href="" class="home-product-icon-three">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                        src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Bamboo-Lamp.webp"
+                        srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Bamboo-Lamp.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Bamboo-Lamp.webp 2x"
+                        height="auto" width="800">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-product-desc">
+                <div class="home-product-desc-item">
+                  <h5 class="home-produtc-title">
+                    <a href="#">Bamboo Lamp</a>
+                  </h5>
+                  <h6 class="home-product-price">
+                    <del class="home-product-oldPrice">$86</del>
+                    <span class="home-product-newPrice">$74</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="home-product">
+              <div class="home-product-content">
+                <div class="home-product-item">
+                  <div class="home-product-img">
+                    <span class="home-product-discount">0%</span>
+                    <div class="home-product-icon">
+                      <div class="home-product-icon-item">
+                        <a href="#"></a>
+                      </div>
+                      <a href="" class="home-product-icon-two"></a>
+                      <a href="" class="home-product-icon-three">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                        src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Slider-image-02.webp"
+                        srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Slider-image-02.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Slider-image-02.webp 2x">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-product-desc">
+                <div class="home-product-desc-item">
+                  <h5 class="home-produtc-title">
+                    <a href="#">Velvet Armchair</a>
+                  </h5>
+                  <h6 class="home-product-price">
+                    <del class="home-product-oldPrice"></del>
+                    <span class="home-product-newPrice">$560</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="home-product">
+              <div class="home-product-content">
+                <div class="home-product-item">
+                  <div class="home-product-img">
+                    <span class="home-product-discount">-11%</span>
+                    <div class="home-product-icon">
+                      <div class="home-product-icon-item">
+                        <a href="#"></a>
+                      </div>
+                      <a href="" class="home-product-icon-two"></a>
+                      <a href="" class="home-product-icon-three">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
+                        src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Metal-Pendant-Light.webp"
+                        srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Metal-Pendant-Light.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/Metal-Pendant-Light.webp 2x">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-product-desc">
+                <div class="home-product-desc-item">
+                  <h5 class="home-produtc-title">
+                    <a href="#">Metal Pendant Light</a>
+                  </h5>
+                  <h6 class="home-product-price">
+                    <del class="home-product-oldPrice">$270</del>
+                    <span class="home-product-newPrice">$240</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
@@ -270,8 +439,9 @@
     </section>
   </footer>
 
-  <script src="/assets/js/jquery.js"></script>
-  <script src="/assets/js/jquery-3.6.1.min.js"></script>
+  <script ></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/jquery.js"></script>
   <script src="https://kit.fontawesome.com/ea59f2a167.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
