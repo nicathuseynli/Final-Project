@@ -105,8 +105,6 @@ $(document).ready(function () {
       $(".OneBtn").addClass("disable");
       $(".SecondBtn").removeClass("disable");
       $(".SecondBtn").addClass("active");
-      $(".FourthBtn").removeClass("active");
-      $(".FourthBtn").addClass("disable");
       $(".ThirdBtn").removeClass("active");
       $(".ThirdBtn").addClass("disable");
       // =====================================
@@ -115,19 +113,6 @@ $(document).ready(function () {
         $(".SecondBtn").addClass("disable");
         $(".ThirdBtn").removeClass("disable");
         $(".ThirdBtn").addClass("active");
-        $(".FourthBtn").removeClass("active");
-        $(".FourthBtn").addClass("disable");
-        $(".OneBtn").removeClass("active");
-        $(".OneBtn").addClass("disable");
-      });
-      // ======================================
-      $(".FourthBtn").click(function () {
-        $(".ThirdBtn").removeClass("active");
-        $(".ThirdBtn").addClass("disable");
-        $(".FourthBtn").removeClass("disable");
-        $(".FourthBtn").addClass("active");
-        $(".SecondBtn").removeClass("active");
-        $(".SecondBtn").addClass("disable");
         $(".OneBtn").removeClass("active");
         $(".OneBtn").addClass("disable");
       });
@@ -137,8 +122,6 @@ $(document).ready(function () {
         $(".OneBtn").addClass("active");
         $(".ThirdBtn").removeClass("active");
         $(".ThirdBtn").addClass("disable");
-        $(".FourthBtn").removeClass("active");
-        $(".FourthBtn").addClass("disable");
         $(".SecondBtn").removeClass("active");
         $(".SecondBtn").addClass("disable");
       });
