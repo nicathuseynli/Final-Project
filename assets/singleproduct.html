@@ -105,25 +105,22 @@
               <div class='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12' id='thumb_container'>
                 <div class="row gy-4">
                   <div class='col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-4 col-4' id='thumb_container'>
-                    <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
-                      src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
-                      srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
-                      height="auto" width="800" onClick='sendimg(this);'>
+                    <img  class="primary-img"
+                      src="/assets/images/interior-slider-product2.webp"
+                       onClick='sendimg(this);'>
                   </div>
                   <div class='col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-4 col-4' id='thumb_container'>
-                    <img decoding="async" loading="lazy" alt="custom-image" class="primary-img"
-                      src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
-                      srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
-                      height="auto" width="800" onClick='sendimg(this);'>
+                    <img class="primary-img"
+                      src="/assets/images/interior-slider-product1.webp"
+                       onClick='sendimg(this);'>
                   </div>
                 </div>
               </div>
               <div class='col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12'>
-                <div id="main_image" class="xzoom-thumbs product-image-preview active">
-                  <img decoding="async" loading="lazy" alt="custom-image" class="primary-img xzoom" id="xzoom-fancy"
-                    src="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp"
-                    srcset="https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 1x, https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/slider-image-01.webp 2x"
-                    height="auto" width="800">
+                <div id="main_image">
+                  <img id='mainimg' class="primary-img"
+                    src="/assets/images/interior-slider-product2.webp"
+                    onClick='sendimg(this);'>
                 </div>
               </div>
             </div>
@@ -208,19 +205,19 @@
                   <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-xsm-12 col-12 mb-4 mt-5">
                       <div class=" d-flex justify-content-start">
                           <ul class="nav faqSection tab-style-1" id="myTab" role="tablist">
-                              <li class="nav-item mb-4 me-4" role="presentation">
+                              <li class="nav-item-tab  mb-4 me-4" role="presentation">
                                   <a class="OneBtn active" id="Description-tab" data-bs-toggle="tab" href="#Description"
                                       role="tab" aria-controls="Description" aria-selected="true">
                                       Description
                                   </a>
                               </li>
-                              <li class="nav-item me-4" role="presentation">
+                              <li class="nav-item-tab  me-4" role="presentation">
                                   <a id="Additional_information-tab" class="SecondBtn disable" data-bs-toggle="tab"
                                       href="#Additional_information" role="tab" aria-controls="Additional_information" aria-selected="false">
                                       Additional information
                                   </a>
                               </li>
-                              <li class="nav-item" role="presentation">
+                              <li class="nav-item-tab " role="presentation">
                                   <a id="Reviews-tab" class="ThirdBtn disable" data-bs-toggle="tab"
                                       href="#Reviews" role="tab" aria-controls="Reviews" aria-selected="false">
                                       Reviews
@@ -600,6 +597,7 @@
   <script></script>
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/ea59f2a167.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
